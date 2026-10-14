@@ -1,6 +1,6 @@
 # V46 PS-complete three-seed diagnostic results
 
-This report records the first executed V46 run after expanding the network-state schema to cover the remaining SIH flow/packet attributes. It is deliberately a **development diagnostic**, not release-grade forecasting evidence.
+This report records the first executed V46 run after expanding the network-state schema to cover the remaining flow/packet attributes. It is deliberately a **development diagnostic**, not release-grade forecasting evidence.
 
 ## Evidence scope
 

@@ -1,6 +1,6 @@
 """V108 development-only PS-complete GraphSAGE+LSTM recovery.
 
-Trains the world model directly on the full SIH packet/flow feature contract already
+Trains the world model directly on the full packet/flow feature contract already
 implemented in ps_complete.py. No consumed external holdout is used for fitting,
 selection, support fitting, or adapter selection.
 """
@@ -175,7 +175,7 @@ def main():
     report={
         'schema_version':'v108.1','status':'DEV_PS_COMPLETE_PASS' if recovery else 'DEV_PS_COMPLETE_FAIL',
         'recovery_gate_passed':recovery,
-        'claim_boundary':'Development-only full SIH flow+packet feature recovery; consumed external holdouts are not used and no fresh external, five-stage, or successful-compromise claim is created.',
+        'claim_boundary':'Development-only full flow+packet feature recovery; consumed external holdouts are not used and no fresh external, five-stage, or successful-compromise claim is created.',
         'development_sources':{'dataset':'CICAPT-IIoT2024','development_reuse':True,
             'phase1':{'capture':PHASE1_NAME,'sha256':phase1_sha,'decoded_packets':int(n1),'observed_windows':int(len(t1)),'contiguous_sequences':int(len(sx1)),'train_sequences':int(len(train_ids)),'validation_sequences':int(len(valid_ids)),'embargo_sequences':EMBARGO_SEQUENCES},
             'phase2':{'capture':PHASE2_NAME,'sha256':phase2_sha,'decoded_packets':int(n2),'observed_windows':int(len(t2)),'contiguous_sequences':int(len(sx2)),'used_for_selection':False}},

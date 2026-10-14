@@ -1,6 +1,6 @@
 /**
  * KRISHNA DEFENCE SYSTEM — MEGA COMPREHENSIVE FRESH AUDIT v3.0
- * MITRE ATT&CK Aligned · SIH26153 Theme · Production Stress Test
+ * MITRE ATT&CK Aligned · HackForSocialCause Theme · Production Stress Test
  */
 
 const http = require('http');
@@ -168,12 +168,12 @@ async function main() {
     { label: 'Sub-ms Latency (P95)',                  score: tput.p95 <= 2 ? 10 : tput.p95 <= 10 ? 8 : 5 },
     { label: 'High Throughput (>1000 req/s)',          score: tput.rps >= 2000 ? 10 : tput.rps >= 1000 ? 8 : 5 },
     { label: 'Air-Gapped / On-Premise Operation',     score: 10 },
-    { label: 'SIH26153 NTRO Blockchain+Cyber Theme',  score: 10 },
+    { label: 'HackForSocialCause Garuda Blockchain+Cyber Theme',  score: 10 },
   ];
   const sihTotal = sihItems.reduce((a,s)=>a+s.score,0);
   const sihPct   = (sihTotal/(sihItems.length*10)*100).toFixed(1);
 
-  console.log(col(C.bold + C.cyan, '\n═ PHASE 3: SIH26153 NTRO THEME ALIGNMENT SCORE ═\n'));
+  console.log(col(C.bold + C.cyan, '\n═ PHASE 3: HackForSocialCause Garuda THEME ALIGNMENT SCORE ═\n'));
   for (const s of sihItems) {
     const bar = '█'.repeat(s.score) + '░'.repeat(10-s.score);
     const c = s.score >= 9 ? C.green : s.score >= 7 ? C.yellow : C.red;
@@ -190,7 +190,7 @@ async function main() {
   console.log(`\n  Precision : ${col(C.green + C.bold, precision.toFixed(2) + '%')}  |  Recall (Block Rate) : ${col(C.green + C.bold, recall.toFixed(2) + '%')}`);
   console.log(`  F1-Score  : ${col(C.green + C.bold, f1.toFixed(2) + '%')}  |  False Positive Rate : ${col(fpr<=5?C.green:C.yellow, fpr.toFixed(2) + '%')}`);
   console.log(`\n  Throughput: ${col(C.green + C.bold, tput.rps + ' req/s')}  |  P50: ${tput.p50}ms  |  P95: ${tput.p95}ms  |  P99: ${tput.p99}ms`);
-  console.log(`\n  SIH Theme Match: ${col(C.cyan + C.bold, sihTotal + '/' + sihItems.length*10 + '  (' + sihPct + '%)')}`);
+  console.log(`\n  Hack for Social Cause Theme Match: ${col(C.cyan + C.bold, sihTotal + '/' + sihItems.length*10 + '  (' + sihPct + '%)')}`);
   console.log(`\n  ${col(C.bold + C.green, '★ OVERALL RATING: ' + overall + '/100 — ' + grade)}\n`);
 }
 

@@ -1,5 +1,5 @@
 /**
- * NTRO SIH26153: AI Garuda AI for Network Attack Forecasting Engine
+ * Garuda HackForSocialCause: AI Garuda AI for Network Attack Forecasting Engine
  * Pure neural network inference of the trained Gated LSTM Sequence Garuda AI.
  * Ingests trained 4-Gate LSTM weights from trained_world_model_weights.json.
  */
@@ -19,7 +19,7 @@ class NetworkWorldModel {
 
     let weightsPath = path.join(__dirname, 'trained_world_model_weights.json');
     if (!fs.existsSync(weightsPath)) {
-      weightsPath = path.join(__dirname, 'ntro-world-model', 'trained_world_model_weights.json');
+      weightsPath = path.join(__dirname, 'garuda-world-model', 'trained_world_model_weights.json');
     }
 
     try {

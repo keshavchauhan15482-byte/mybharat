@@ -10,7 +10,7 @@ Hosted console: https://krishna-defence-console-keshav.keshavchauhan1254.chatgpt
 - Matched three-seed model comparison, including mean and sample standard deviation for every model. Seeds 42, 7 and 19 use the same reused holdout. GNN mean F1 96.04%, LSTM 94.24%, logistic regression 91.63%. These are initialization repeats, not independent datasets.
 - A 51-host original-PCAP topology selected from a QC-valid window. No nodes are invented. The service checkpoint does not forecast this host graph. Select Recorded alert separately for the service-model trajectory.
 - Hosted WebGL network and defence-architecture modes, accessible node selection, perspective fallback, observed activity and degree charts, feature contributions and model evidence.
-- Cross-day roadmap both on the site and as `sih_submission/CrossDay_Pilot_Roadmap.pptx`. Replace the old roadmap slide when keeping a five-slide submission.
+- Cross-day roadmap both on the site and as `hackathon_submission/CrossDay_Pilot_Roadmap.pptx`. Replace the old roadmap slide when keeping a five-slide submission.
 
 ## Run the local project
 

@@ -1,6 +1,6 @@
 # 🦅 Garuda AI — Technical Architecture Specification
 ## Predictive Attack Forecasting Engine — Part of Krishna Defence System
-**Problem Statement ID:** SIH26153 | **Category:** Software / Critical Information Infrastructure (CII) Defense
+**Problem Statement ID:** HackForSocialCause | **Category:** Software / Critical Information Infrastructure (CII) Defense
 
 ---
 

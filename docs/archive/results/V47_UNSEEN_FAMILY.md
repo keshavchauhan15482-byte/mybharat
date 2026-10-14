@@ -1,10 +1,10 @@
 # V47 — Unseen-family open-set forecasting protocol
 
-V47 is the next evidence track for SIH26153. Its purpose is to test whether Garuda can forecast malicious future states when an entire attack family is absent from training and policy selection.
+V47 is the next evidence track for HackForSocialCause. Its purpose is to test whether Garuda can forecast malicious future states when an entire attack family is absent from training and policy selection.
 
 ## Why this matters
 
-The SIH problem asks for a World Model that learns evolving network state, forecasts future malicious activity and attacker progression, and supports proactive defence before compromise is completed. A classifier that only recognizes attack families seen during training is not sufficient evidence for that goal.
+The Hack for Social Cause Problem asks for a World Model that learns evolving network state, forecasts future malicious activity and attacker progression, and supports proactive defence before compromise is completed. A classifier that only recognizes attack families seen during training is not sufficient evidence for that goal.
 
 V47 therefore evaluates **family-disjoint generalisation**. It is an honest simulation of unseen/novel attacks. It must not be advertised as proof of a real-world zero-day because the held-out families are known to the dataset publisher and are used after inference for evaluation.
 

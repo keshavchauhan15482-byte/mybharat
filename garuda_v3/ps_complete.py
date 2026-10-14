@@ -1,4 +1,4 @@
-"""SIH problem-statement-complete packet/flow feature extraction.
+"""Hack for Social Cause Problem-statement-complete packet/flow feature extraction.
 
 This is an additive V46 schema.  It does not change or reinterpret the historical
 Garuda v3.1 checkpoints.  Raw packet captures carry *unknown* attack truth until
@@ -214,7 +214,7 @@ def convert_pcap(path: str | Path, *, campaign: str, family: str = "unknown", mo
                  window_seconds: int = 10, max_packets: int = 2_000_000, max_nodes: int = 128,
                  drop_last: bool = True) -> dict:
     if window_seconds != 10:
-        raise ValueError("V46 SIH evidence contract is frozen at 10-second windows")
+        raise ValueError("V46 Hack for Social Cause evidence contract is frozen at 10-second windows")
     if max_packets < 1 or max_packets > 10_000_000:
         raise ValueError("max_packets must be 1..10,000,000")
     if mode == "service" and max_nodes < len(SERVICE_NODES):
@@ -244,7 +244,7 @@ def convert_pcap(path: str | Path, *, campaign: str, family: str = "unknown", mo
         "node_names": names[:stop], "windows": len(used_times), "synthetic": False,
         "label_provenance": "raw PCAP establishes network state only; attack labels remain unknown until explicit annotation",
         "runtime_evidence": "network-only", "risk_labels_attached": False,
-        "feature_contract": "SIH flow+packet requested attributes including PSH/URG, IAT mean/variance/max, payload distribution, scan transitions and retransmission count",
+        "feature_contract": "flow+packet requested attributes including PSH/URG, IAT mean/variance/max, payload distribution, scan transitions and retransmission count",
         "scan_feature_semantics": "sequential/random port-transition fractions are descriptive telemetry features, not attack labels",
         "limitations": ["retransmission is duplicate positive-payload TCP segment indicator, not full stream reassembly", "classic PCAP Ethernet/raw IPv4 only"],
     }

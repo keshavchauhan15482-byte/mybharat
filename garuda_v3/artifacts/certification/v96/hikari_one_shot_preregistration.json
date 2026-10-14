@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "PRE_EVALUATION_FROZEN",
-  "purpose": "Fresh external one-shot generalization evaluation for SIH26153 evidence. No result has been observed under this registration.",
+  "purpose": "Fresh external one-shot generalization evaluation for HackForSocialCause evidence. No result has been observed under this registration.",
   "dataset": {
     "name": "HIKARI-2021",
     "publisher": "Zenodo / Keio University authors",

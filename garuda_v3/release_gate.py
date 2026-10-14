@@ -26,7 +26,7 @@ def report(folder=None):
         'independent_security_and_load_review':False,
     }
     return {'market_ready':all(gates.values()),'gates':gates,
-        'purpose':'prevent unsupported readiness claims; minimum counts are internal engineering checks, not official SIH criteria or certification',
+        'purpose':'prevent unsupported readiness claims; minimum counts are internal engineering checks, not official Hack for Social Cause criteria or certification',
         'scope':metrics.get('evaluation_scope','internal temporal holdout'),'independent_review_status':'not supplied'}
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--artifacts')

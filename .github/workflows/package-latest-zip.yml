@@ -24,15 +24,15 @@ jobs:
         run: |
           set -euo pipefail
           git fetch origin main --force
-          git archive --format=zip --prefix=KrishnaDefence_SIH26153_Release/ -o KrishnaDefence_SIH26153_Release.zip origin/main
-          sha256sum KrishnaDefence_SIH26153_Release.zip > KrishnaDefence_SIH26153_Release.zip.sha256
-          unzip -t KrishnaDefence_SIH26153_Release.zip
+          git archive --format=zip --prefix=KrishnaDefence_HackForSocialCause_Release/ -o KrishnaDefence_HackForSocialCause_Release.zip origin/main
+          sha256sum KrishnaDefence_HackForSocialCause_Release.zip > KrishnaDefence_HackForSocialCause_Release.zip.sha256
+          unzip -t KrishnaDefence_HackForSocialCause_Release.zip
       - name: Upload release package
         uses: actions/upload-artifact@v4
         with:
-          name: KrishnaDefence_SIH26153_Release
+          name: KrishnaDefence_HackForSocialCause_Release
           path: |
-            KrishnaDefence_SIH26153_Release.zip
-            KrishnaDefence_SIH26153_Release.zip.sha256
+            KrishnaDefence_HackForSocialCause_Release.zip
+            KrishnaDefence_HackForSocialCause_Release.zip.sha256
           if-no-files-found: error
           compression-level: 0

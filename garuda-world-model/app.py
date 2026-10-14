@@ -1,5 +1,5 @@
 """
-NTRO SIH26153: Demonstration Runner & Interactive Inspection CLI
+Garuda HackForSocialCause: Demonstration Runner & Interactive Inspection CLI
 Accepts PCAP or CSV files as input (--input <path>), runs PyTorch CyberLSTMWorldModel
 forward rollout, displays time-series risk progression, MITRE ATT&CK stages,
 and genuine SHAP explainability. Wires real HTTP closed-loop mitigation call
@@ -118,7 +118,7 @@ def trigger_krishna_lockdown(mitre_stage, probability, driving_features, target_
 
 def run_inspection_dashboard(input_file=None):
     print("\n" + "=" * 85)
-    print("🔮 NTRO SIH26153: PyTorch LSTM CYBER WORLD MODEL — ATTACK FORECASTING ENGINE")
+    print("🔮 Garuda HackForSocialCause: PyTorch LSTM CYBER WORLD MODEL — ATTACK FORECASTING ENGINE")
     print(f"   Model: CyberLSTMWorldModel | Device: {DEVICE} | Checkpoint: {os.path.basename(MODEL_PATH)}")
     print("=" * 85)
 
@@ -213,7 +213,7 @@ def run_inspection_dashboard(input_file=None):
     print("=" * 85 + "\n")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="NTRO SIH26153: Cyber Garuda AI CLI Demonstration")
+    parser = argparse.ArgumentParser(description="Garuda HackForSocialCause: Cyber Garuda AI CLI Demonstration")
     parser.add_argument("--input", "-i", type=str, default=None, help="Path to PCAP or CSE-CIC-IDS2018 CSV file")
     args = parser.parse_args()
 

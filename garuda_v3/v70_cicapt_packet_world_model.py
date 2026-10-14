@@ -1,7 +1,7 @@
 """V70 combined flow+packet world-model forecasting benchmark on real CICAPT PCAPNG.
 
 The benchmark trains the residual LSTM world model on Phase-1 10-second network-state
-vectors produced directly from packet captures using the full SIH flow+packet feature
+vectors produced directly from packet captures using the full flow+packet feature
 schema, selects its persistence/residual blend on a later Phase-1 validation segment,
 and evaluates state forecasting on the separate Phase-2 capture.
 
@@ -148,7 +148,7 @@ def main():
     report = {
         "protocol": "V70 real CICAPT combined packet+flow state-transition forecasting",
         "claim_boundary": (
-            "The learned residual LSTM consumes the complete extracted SIH packet+flow state vector and is "
+            "The learned residual LSTM consumes the complete extracted packet+flow state vector and is "
             "evaluated on a separate experiment-phase capture. This is state-dynamics evidence; it is not "
             "attack-stage accuracy, warning lead-time, or production zero-day evidence."
         ),

@@ -2,7 +2,7 @@
 
 Garuda's target capability is **generalisation beyond attack families used during development**. V47 measures that capability with a strict family-disjoint public-dataset protocol.
 
-Terminology for SIH presentation:
+Terminology for Hack for Social Cause presentation:
 
 - **Allowed now:** `unseen-family attack forecasting`, `open-set attack-family simulation`, `held-out-family generalisation`, `zero-supervised-exposure to the held-out family`.
 - **Allowed only if the V47 gate passes:** `Garuda detected/forecast an attack family excluded from model development in our controlled benchmark`.

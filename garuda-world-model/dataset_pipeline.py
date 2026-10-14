@@ -1,5 +1,5 @@
 """
-NTRO SIH26153: Enterprise Dataset Ingestion & Feature Extraction Pipeline
+Garuda HackForSocialCause: Enterprise Dataset Ingestion & Feature Extraction Pipeline
 Streams 1.5 Lakh (150,000) flow records from CSE-CIC-IDS2018 CSV dumps & PCAP captures.
 Includes robust column-safety checks, whitespace stripping, and small-file edge case protection.
 """

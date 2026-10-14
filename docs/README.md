@@ -2,15 +2,15 @@
 
 This folder separates **current release evidence** from **historical research** so evaluators do not have to navigate experiment-by-experiment version history.
 
-## For SIH evaluators
+## For Hack for Social Cause evaluators
 
 Read these first:
 
 1. [`../README.md`](../README.md) — project overview and setup instructions.
-2. [`release/FINAL_SIH_EVIDENCE.md`](release/FINAL_SIH_EVIDENCE.md) — authoritative current evidence and claim boundaries.
+2. [`release/FINAL_HACKATHON_EVIDENCE.md`](release/FINAL_HACKATHON_EVIDENCE.md) — authoritative current evidence and claim boundaries.
 3. [`../RELEASE_EVIDENCE.md`](../RELEASE_EVIDENCE.md) — compact evidence index.
 4. [`../garuda_v3/`](../garuda_v3/) — current forecasting / runtime implementation.
-5. [`../sih_submission/`](../sih_submission/) — submission and demo material.
+5. [`../hackathon_submission/`](../hackathon_submission/) — submission and demo material.
 
 ## Current release evidence
 
@@ -18,9 +18,9 @@ Read these first:
 
 The authoritative judge-facing file is:
 
-> **[`release/FINAL_SIH_EVIDENCE.md`](release/FINAL_SIH_EVIDENCE.md)**
+> **[`release/FINAL_HACKATHON_EVIDENCE.md`](release/FINAL_HACKATHON_EVIDENCE.md)**
 
-If an older document conflicts with this file, use `FINAL_SIH_EVIDENCE.md` for the current SIH claim boundary.
+If an older document conflicts with this file, use `FINAL_HACKATHON_EVIDENCE.md` for the current Hack for Social Cause claim boundary.
 
 ## Historical / superseded work
 
@@ -32,12 +32,12 @@ These files are useful for engineering history, but they are **not the recommend
 
 | Need | Go to |
 |---|---|
-| Run the SIH demo | [`../README.md#quick-setup--main-demo`](../README.md#quick-setup--main-demo) |
+| Run the Hack for Social Cause demo | [`../README.md#quick-setup--main-demo`](../README.md#quick-setup--main-demo) |
 | Main dashboard | [`../console.html`](../console.html) |
 | Current forecasting code | [`../garuda_v3/`](../garuda_v3/) |
-| Current evidence | [`release/FINAL_SIH_EVIDENCE.md`](release/FINAL_SIH_EVIDENCE.md) |
+| Current evidence | [`release/FINAL_HACKATHON_EVIDENCE.md`](release/FINAL_HACKATHON_EVIDENCE.md) |
 | Dataset provenance | [`../datasets/`](../datasets/) |
-| Submission material | [`../sih_submission/`](../sih_submission/) |
+| Submission material | [`../hackathon_submission/`](../hackathon_submission/) |
 | Security validation | [`../security_validation/`](../security_validation/) |
 | Reproducibility workflows | [`../.github/workflows/`](../.github/workflows/) |
 | Historical experiments | [`archive/`](archive/) |

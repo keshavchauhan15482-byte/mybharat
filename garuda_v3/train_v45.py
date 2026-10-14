@@ -1,7 +1,7 @@
 """Strict forecasting entrypoint for the V45 evidence protocol.
 
 The legacy/reproduction trainer remains available as ``garuda_v3.train``.
-This entrypoint is the SIH forecasting path: common 10-second graph contract,
+This entrypoint is the Hack for Social Cause forecasting path: common 10-second graph contract,
 predeclared campaign split, untouched final test, validation-only calibration and
 policy selection, four 10-second future horizons, residual decoding, state-first
 training, unknown-label masking and no aggressive risk balancing.

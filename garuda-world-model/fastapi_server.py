@@ -1,5 +1,5 @@
 """
-NTRO SIH26153: Enterprise FastAPI Microservice Architecture
+Garuda HackForSocialCause: Enterprise FastAPI Microservice Architecture
 Exposes high-throughput REST APIs for PyTorch World Model Rollout,
 PCAP/CSV Ingestion, Official SHAP Attributions, and Sudarshana Blockchain Anchoring.
 Swagger UI: http://localhost:8000/docs
@@ -27,7 +27,7 @@ from shap_explainer_real import GenuinePyTorchShapExplainer
 from drift_monitor import TelemetryDriftMonitor
 
 app = FastAPI(
-    title="NTRO SIH26153: Cyber World Model Forecasting API",
+    title="Garuda HackForSocialCause: Cyber World Model Forecasting API",
     description="Production-Grade Deep Learning REST API for Proactive Malicious Infiltration Forecasting",
     version="2.0.0"
 )

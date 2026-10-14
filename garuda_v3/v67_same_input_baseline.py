@@ -2,7 +2,7 @@
 
 Purpose
 -------
-Close the SIH baseline requirement without contaminating the independent UNSW holdout.
+Close the Hack for Social Cause baseline requirement without contaminating the independent UNSW holdout.
 Both systems receive the same observed network-state history. Logistic Regression is
 fit only on the chronological training split, its feature scaling is fit on training
 only, and its operating threshold is chosen only from clean policy-period traffic at

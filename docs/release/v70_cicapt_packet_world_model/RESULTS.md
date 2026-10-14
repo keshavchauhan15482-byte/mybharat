@@ -5,7 +5,7 @@ Authoritative GitHub Actions run: `35525494762` (`V70 CICAPT packet+flow world-m
 ## Contract
 
 - Real, hash-verified CICAPT-IIoT2024 PCAPNG captures are parsed with the production packet reader.
-- The state vector uses the full SIH flow+packet feature schema from `garuda_v3.ps_complete.FEATURES`.
+- The state vector uses the full flow+packet feature schema from `garuda_v3.ps_complete.FEATURES`.
 - Each state window is 10 seconds; history is 8 windows and future rollout is 4 windows (40-second state forecast).
 - The benchmark uses a bounded prefix of **2,000,000 decoded IPv4 packets from each phase**.
 - Phase 1 is used for chronological training/validation only, with a 12-sequence embargo.

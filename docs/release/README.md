@@ -1,6 +1,6 @@
 # Current release evidence
 
-This directory contains the small set of reports that support the current SIH-facing evidence package.
+This directory contains the small set of reports that support the current hackathon-facing evidence package.
 
 - `V48_RESULTS.md` — authoritative frozen X-IIoTID unseen-family reserve evaluation.
 - `V48_UNSEEN_FUSION.md` — frozen fusion design/protocol behind the V48 result.

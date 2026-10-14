@@ -1,5 +1,5 @@
 """
-NTRO SIH26153 — Bharat Cyber Shield
+Garuda HackForSocialCause — Bharat Cyber Shield
 Production-Grade MVP Streamlit Dashboard
 
 Architecture:
@@ -33,7 +33,7 @@ from drift_monitor import TelemetryDriftMonitor
 
 # ─── Page Config ──────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Bharat Cyber Shield — NTRO SIH26153",
+    page_title="Bharat Cyber Shield — Garuda HackForSocialCause",
     page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -118,7 +118,7 @@ def mitre_stage(prob, vec):
 # ─── Sidebar ──────────────────────────────────────────────────────────────────
 st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/240px-Emblem_of_India.svg.png", width=60)
 st.sidebar.title("🛡️ Bharat Cyber Shield")
-st.sidebar.caption("NTRO SIH26153 — AI Network Attack Forecasting")
+st.sidebar.caption("Garuda HackForSocialCause — AI Network Attack Forecasting")
 st.sidebar.markdown("---")
 
 data_source = st.sidebar.radio("📡 Telemetry Source", [
@@ -195,7 +195,7 @@ lead_time   = max(0, (len(step_probs) - 1 - (breach_step or len(step_probs) - 1)
 
 # ─── Header ───────────────────────────────────────────────────────────────────
 st.title("🛡️ Bharat Cyber Shield — AI Network Attack Forecasting")
-st.caption("PyTorch LSTM Garuda AI | Learns $\\mathcal{P}(S_{t+1} \\mid S_t)$ | Predicts Infiltration Before Compromise Completes | NTRO SIH26153")
+st.caption("PyTorch LSTM Garuda AI | Learns $\\mathcal{P}(S_{t+1} \\mid S_t)$ | Predicts Infiltration Before Compromise Completes | Garuda HackForSocialCause")
 
 badge_html = (
     f'<span class="risk-critical">⚠️ BREACH IMMINENT — {peak_p:.1f}%</span>' if peak_p >= 70 else
@@ -546,7 +546,7 @@ with tab4:
 # ─── Footer ───────────────────────────────────────────────────────────────────
 st.markdown("---")
 st.markdown(
-    "**Bharat Cyber Shield** | NTRO SIH26153 | "
+    "**Bharat Cyber Shield** | Garuda HackForSocialCause | "
     "PyTorch LSTM + Transformer Garuda AI | "
     "CIC-IDS2018 Real Dataset | "
     "SHAP + Attention Explainability | "

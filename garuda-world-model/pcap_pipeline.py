@@ -1,5 +1,5 @@
 """
-NTRO SIH26153: Enterprise PCAP / PCAPNG Packet Telemetry Ingestion Pipeline
+Garuda HackForSocialCause: Enterprise PCAP / PCAPNG Packet Telemetry Ingestion Pipeline
 Uses Scapy to extract raw packet headers, inter-arrival times, TCP flags, TTL metrics,
 and port entropy into canonical 12-dimensional World Model state vectors S_t.
 """

@@ -3,7 +3,7 @@
 This verifier is intentionally about evidence integrity, not about declaring that a
 model is good enough for deployment.  It accepts a candidate only when:
 
-* all five SIH/MITRE stage classes have genuinely supervised labels and complete
+* all five Hack for Social Cause/MITRE stage classes have genuinely supervised labels and complete
   per-stage metrics;
 * unknown labels are masked/ignored rather than silently treated as benign;
 * stage-head fitting/calibration provenance excludes test/replay data;
@@ -162,7 +162,7 @@ def verify_manifest(repo_root: Path, manifest: dict[str, Any]) -> dict[str, Any]
     canonical_requested = {canonical_stage(x) for x in requested}
     canonical_requested.discard(None)
     if canonical_requested != set(REQUIRED_STAGES):
-        reasons.append("required_stages must cover exactly the five SIH stage classes")
+        reasons.append("required_stages must cover exactly the five stage classes")
 
     stage = manifest.get("stage_evidence")
     if not isinstance(stage, dict):

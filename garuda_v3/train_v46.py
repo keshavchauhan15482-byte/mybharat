@@ -1,4 +1,4 @@
-"""State-first V46 trainer for the additive SIH PS-complete feature schema.
+"""State-first V46 trainer for the additive PS-complete feature schema.
 
 The trainer preserves the V45 evidence discipline while accepting the expanded
 packet/flow feature vector.  It can run state-only on unlabeled PCAP telemetry,

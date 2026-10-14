@@ -13,7 +13,7 @@
     "independent_campaign_evaluation": false,
     "independent_security_and_load_review": false
   },
-  "purpose": "prevent unsupported readiness claims; minimum counts are internal engineering checks, not official SIH criteria or certification",
+  "purpose": "prevent unsupported readiness claims; minimum counts are internal engineering checks, not official Hack for Social Cause criteria or certification",
   "scope": "development_reused_holdout",
   "independent_review_status": "not supplied"
 }

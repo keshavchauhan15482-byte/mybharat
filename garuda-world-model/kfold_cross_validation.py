@@ -1,5 +1,5 @@
 """
-NTRO SIH26153: Production-Grade 5-Fold Stratified Cross-Validation Benchmark
+Garuda HackForSocialCause: Production-Grade 5-Fold Stratified Cross-Validation Benchmark
 Trains and evaluates PyTorch CyberLSTMWorldModel across 5 isolated stratified folds
 on genuine CSE-CIC-IDS2018 datasets, computing Mean ± Std for F1, Precision, Recall,
 ROC-AUC, FPR, and Advance Warning Lead Time.

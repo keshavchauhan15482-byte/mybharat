@@ -4,7 +4,7 @@ Current update details and required data: [FIX_STATUS.md](FIX_STATUS.md). Origin
 
 ## Scope
 
-A trained directed GraphSAGE + LSTM world-model reference, implemented with NumPy reverse-mode differentiation. This is real supervised gradient training through graph layers, recurrent gates and autoregressive decoder. It is not the old handwritten approximate-gradient model, not PyTorch Geometric, and not a claim of research novelty. An accessible CPU implementation is appropriate for the offline SIH demo. A production backend can port the checked equations to a maintained ML framework after dependency access is available.
+A trained directed GraphSAGE + LSTM world-model reference, implemented with NumPy reverse-mode differentiation. This is real supervised gradient training through graph layers, recurrent gates and autoregressive decoder. It is not the old handwritten approximate-gradient model, not PyTorch Geometric, and not a claim of research novelty. An accessible CPU implementation is appropriate for the offline Hack for Social Cause demo. A production backend can port the checked equations to a maintained ML framework after dependency access is available.
 
 Inputs are 8 observed 10-second graph windows. Outputs are the next 4 graph-summary feature vectors, diagonal Gaussian standard deviations and per-window probabilities of malicious-flow presence. Autoregression feeds the previous predicted state into the next decoder step. The current residual decoder initializes at persistence and predicts a bounded change (±0.1 per step), clipped to the normalized feature domain. Its loss is BCE + 10×state MSE + 0.01×Gaussian NLL; optional masked stage BCE has weight 0.5. Older absolute-decoder checkpoints remain loadable. The model does not predict future graph edges, a causal compromise path or calibrated probability of infiltration.
 
@@ -25,8 +25,8 @@ Maximum graph size is 32 nodes in this reference. Larger host graphs require exp
 Run all commands from the project root after installing `garuda_v3/requirements.txt`.
 
 ```bash
-python -m garuda_v3.data ntro-world-model/cicids2018_data/Thursday-01-03-2018_Infiltration.csv --output garuda_v3/artifacts/Thursday.npz
-python -m garuda_v3.data ntro-world-model/cicids2018_data/Friday-02-03-2018_Infiltration_REAL.csv --output garuda_v3/artifacts/Friday.npz
+python -m garuda_v3.data garuda-world-model/cicids2018_data/Thursday-01-03-2018_Infiltration.csv --output garuda_v3/artifacts/Thursday.npz
+python -m garuda_v3.data garuda-world-model/cicids2018_data/Friday-02-03-2018_Infiltration_REAL.csv --output garuda_v3/artifacts/Friday.npz
 OPENBLAS_NUM_THREADS=1 python -m garuda_v3.train --graphs garuda_v3/artifacts/Thursday.npz garuda_v3/artifacts/Friday.npz --epochs 20 --seed 42 --decoder residual --output garuda_v3/artifacts/reproduced
 python -m garuda_v3.server --artifacts garuda_v3/artifacts/reproduced
 ```

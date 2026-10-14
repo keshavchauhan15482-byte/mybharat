@@ -1,5 +1,5 @@
 """
-NTRO SIH26153: Real Dataset Trimming & Normalization Utility
+Garuda HackForSocialCause: Real Dataset Trimming & Normalization Utility
 Trims large multi-gigabyte CSE-CIC-IDS2018 CSV dumps (e.g. from UNB or Kaggle)
 to a focused, high-density 150,000-row subset covering the Infiltration attack window.
 """

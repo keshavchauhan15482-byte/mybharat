@@ -234,7 +234,7 @@ async function t8(){
 async function main(){
   console.log(C.b+C.C+'\n╔══════════════════════════════════════════════════════════════════╗');
   console.log('║  KRISHNA DEFENCE — REAL NETWORK ATTACK SIMULATION               ║');
-  console.log('║  Team: The Predators | SIH26153 | 8 Attack Categories           ║');
+  console.log('║  Team: The Predators | HackForSocialCause | 8 Attack Categories           ║');
   console.log('╚══════════════════════════════════════════════════════════════════╝'+C.r+'\n');
 
   const r1=await t1();

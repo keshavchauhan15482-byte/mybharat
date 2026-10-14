@@ -98,7 +98,7 @@
   "resolved_since_v97_2": [
     "explicit payload-size distribution features are active world-model inputs",
     "explicit port-scan signature/sequencing features are active world-model inputs",
-    "PSH/URG, IAT variance/max, retransmission count and the remaining mandatory SIH telemetry are active world-model inputs",
+    "PSH/URG, IAT variance/max, retransmission count and the remaining mandatory telemetry are active world-model inputs",
     "legacy feature-name/runtime-value mismatch is removed by a versioned 34-feature schema",
     "hash-pinned V108 world-model artifact demonstrates direct training on the complete feature schema"
   ],

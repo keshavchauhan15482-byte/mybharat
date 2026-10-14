@@ -128,4 +128,4 @@ Each run preserves:
 
 ## Claims boundary
 
-V45 supplies the code path needed to test the SIH forecasting claim correctly. Until a newly reserved final campaign actually passes these gates, do **not** report FPR ≤1%, recall ≥80%, verified warning lead time, supervised stage accuracy or market-ready autonomous blocking as achieved results.
+V45 supplies the code path needed to test the Hack for Social Cause forecasting claim correctly. Until a newly reserved final campaign actually passes these gates, do **not** report FPR ≤1%, recall ≥80%, verified warning lead time, supervised stage accuracy or market-ready autonomous blocking as achieved results.

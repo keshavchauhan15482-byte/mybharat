@@ -43,7 +43,7 @@ The predeclared training permission requires at least 20 clean-history future po
 
 This is an evaluation-support limitation, not a model failure. Moving the split after observing where the attacks occur would turn the final holdout into a tuned diagnostic, so V50 refuses to do that.
 
-WUSTL remains useful for conventional detection and development studies, but this public mirror/fixed final tail is not suitable for the next independent SIH pre-onset unseen-family proof.
+WUSTL remains useful for conventional detection and development studies, but this public mirror/fixed final tail is not suitable for the next independent Hack for Social Cause pre-onset unseen-family proof.
 
 ## Reproduction
 

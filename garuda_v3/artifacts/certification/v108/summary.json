@@ -2,7 +2,7 @@
   "schema_version": "v108.1",
   "status": "DEV_PS_COMPLETE_PASS",
   "recovery_gate_passed": true,
-  "claim_boundary": "Development-only full SIH flow+packet feature recovery; consumed external holdouts are not used and no fresh external, five-stage, or successful-compromise claim is created.",
+  "claim_boundary": "Development-only full flow+packet feature recovery; consumed external holdouts are not used and no fresh external, five-stage, or successful-compromise claim is created.",
   "development_sources": {
     "dataset": "CICAPT-IIoT2024",
     "development_reuse": true,

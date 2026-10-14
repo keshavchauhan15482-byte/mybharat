@@ -1,5 +1,5 @@
 """
-NTRO SIH26153: Genuine Official SHAP Library Integration for PyTorch World Model
+Garuda HackForSocialCause: Genuine Official SHAP Library Integration for PyTorch World Model
 Uses official shap.GradientExplainer on PyTorch tensors to compute exact Shapley value attributions.
 """
 

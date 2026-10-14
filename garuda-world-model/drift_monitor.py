@@ -1,5 +1,5 @@
 """
-NTRO SIH26153: Production Telemetry Drift Detection & Model Reliability Monitor
+Garuda HackForSocialCause: Production Telemetry Drift Detection & Model Reliability Monitor
 Calculates Population Stability Index (PSI) and Wasserstein Feature Distance
 between baseline training distributions and incoming real-time network streams.
 """

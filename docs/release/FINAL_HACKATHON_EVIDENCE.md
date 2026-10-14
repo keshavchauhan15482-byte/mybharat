@@ -1,6 +1,6 @@
-# Garuda AI — Authoritative SIH Evidence Matrix
+# Garuda AI — Authoritative Hack for Social Cause evidence Matrix
 
-This file is the judge-facing source of truth for the current SIH evidence pack. Experiments are reported by scope; results from different datasets/protocols are not merged into one synthetic score.
+This file is the judge-facing source of truth for the current Hack for Social Cause evidence pack. Experiments are reported by scope; results from different datasets/protocols are not merged into one synthetic score.
 
 ## Approved headline claims
 
@@ -105,7 +105,7 @@ This is **lead to labelled attack-step onset**, not verified lead to compromise.
 
 Do **not** claim verified pre-compromise prediction yet. A defensible pre-compromise claim still requires verified successful-compromise timestamps and adequate case support.
 
-## SIH-safe product statement
+## hackathon-safe product statement
 
 > Garuda AI is a network world-model prototype that forecasts future network state from traffic telemetry, converts predicted trajectories into risk/progression evidence, and connects that evidence to layered response controls. The project has demonstrated state-forecasting gains over persistence, a high-recall/low-FPR independent-source UNSW replication, millisecond-scale compatible runtime inference, corrected labelled-attack-onset warning evidence, and a fail-closed runtime support policy. Cross-domain stress tests and controlled subtype evaluation also show that universal portability and robust unseen-subtype stage prediction are not yet solved, so unsupported inputs remain advisory/shadow-mode rather than silently overclaimed.
 
@@ -131,4 +131,4 @@ Do not put these in the final PPT, video, website headline, or judge answer:
 
 ## Submission positioning
 
-For SIH, the strongest defensible differentiation is the **forecast-first architecture + low-FPR independent-source evidence + measured real-time runtime + corrected attack-onset timing evidence + layered response + explicit uncertainty/evidence governance + fail-closed support handling**. The main remaining research gates are cross-domain portability, robust unseen-subtype progression, and verified compromise-timestamp lead-time evidence—not whether the prototype has meaningful forecasting or operational evidence.
+for Hack for Social Cause, the strongest defensible differentiation is the **forecast-first architecture + low-FPR independent-source evidence + measured real-time runtime + corrected attack-onset timing evidence + layered response + explicit uncertainty/evidence governance + fail-closed support handling**. The main remaining research gates are cross-domain portability, robust unseen-subtype progression, and verified compromise-timestamp lead-time evidence—not whether the prototype has meaningful forecasting or operational evidence.

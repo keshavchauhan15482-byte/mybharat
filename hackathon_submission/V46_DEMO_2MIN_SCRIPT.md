@@ -2,7 +2,7 @@
 
 ## 0:00–0:15 — Problem
 
-“Traditional IDS tells us what traffic looks malicious now. Garuda AI is built for the SIH world-model challenge: it observes the evolving network state and rolls that state forward before making a defence decision.”
+“Traditional IDS tells us what traffic looks malicious now. Garuda AI is built for the Hack for Social Cause world-model challenge: it observes the evolving network state and rolls that state forward before making a defence decision.”
 
 Show the offline console and the recorded/network input selector.
 

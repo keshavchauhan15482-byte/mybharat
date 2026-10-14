@@ -1,6 +1,6 @@
 # 🦅 Garuda AI — Predictive Attack Forecasting Engine
 
-> **Part of Krishna Defence System | SIH26153 (NTRO)**
+> **Part of Krishna Defence System | HackForSocialCause (Garuda)**
 >
 > Garuda AI is the predictive brain of the Krishna Defence System. It uses a genuine 4-Gate LSTM + Transformer neural network to learn network state transitions from CIC-IDS2018 traffic telemetry and predict attacks **+150 seconds BEFORE** compromise is completed.
 
@@ -97,4 +97,4 @@ streamlit run streamlit_app.py
 
 ---
 
-**Part of Krishna Defence System — Smart India Hackathon 2026 🇮🇳**
+**Part of Krishna Defence System — Hack for Social Cause 2026 🇮🇳**

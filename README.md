@@ -3,10 +3,10 @@
 # Krishna Defence System
 ### Garuda AI · Forecast-First Cyber Defence
 
-**Smart India Hackathon 2026 · SIH26153**  
+**Hack for Social Cause 2026 · HackForSocialCause**  
 *AI-based Network Attack Forecasting from Network Traffic Data*
 
-![SIH26153](https://img.shields.io/badge/SIH-26153-F97316?style=for-the-badge)
+![HackForSocialCause](https://img.shields.io/badge/Hack-For-Social-Cause-F97316?style=for-the-badge)
 ![Offline First](https://img.shields.io/badge/Demo-Offline--First-1F883D?style=for-the-badge)
 ![World Model](https://img.shields.io/badge/Core-Network%20World%20Model-2563EB?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -23,7 +23,7 @@
 |---|---|
 | **Run the main demo** | [Quick Setup](#quick-setup--main-demo) |
 | **Understand the system** | [Architecture](#system-architecture) |
-| **Check verified results** | [`docs/release/FINAL_SIH_EVIDENCE.md`](docs/release/FINAL_SIH_EVIDENCE.md) |
+| **Check verified results** | [`docs/release/FINAL_HACKATHON_EVIDENCE.md`](docs/release/FINAL_HACKATHON_EVIDENCE.md) |
 | **Inspect the latest 3-seed research diagnostic and its limits** | [`docs/release/causal_native_forecast/README.md`](docs/release/causal_native_forecast/README.md) |
 | **Inspect the causal connection-start fix, risk skip head and fresh campaign audit** | [`docs/release/connection_start_forecast/README.md`](docs/release/connection_start_forecast/README.md) |
 | **Inspect the forecasting code** | [`garuda_v3/`](garuda_v3/) |
@@ -35,7 +35,7 @@
 
 ## What is Krishna Defence?
 
-**Krishna Defence System** is an offline-first SIH research prototype that learns evolving network behaviour, forecasts future network state over multiple horizons, and converts those predicted trajectories into explainable risk evidence for defensive decision support.
+**Krishna Defence System** is an offline-first Hack for Social Cause research prototype that learns evolving network behaviour, forecasts future network state over multiple horizons, and converts those predicted trajectories into explainable risk evidence for defensive decision support.
 
 Traditional IDS/WAF systems mainly answer **“What is happening now?”**. Garuda AI is built around a harder question:
 
@@ -64,7 +64,7 @@ The platform separates forecasting, evidence, investigation and containment so o
 | Per-flow / per-window reaction | Multi-step future-state rollout |
 | Primarily reactive | Forecast-first decision support |
 | One score may hide uncertainty | Forecast, support, stage and response evidence are separated |
-| Often service/cloud dependent | Primary SIH demo runs locally |
+| Often service/cloud dependent | Primary Hack for Social Cause demo runs locally |
 
 ---
 
@@ -106,7 +106,7 @@ flowchart LR
 
 ## Strongest verified evidence
 
-The authoritative judge-facing evidence is [`docs/release/FINAL_SIH_EVIDENCE.md`](docs/release/FINAL_SIH_EVIDENCE.md). Results from different datasets/protocols are intentionally **not blended into one synthetic accuracy number**.
+The authoritative judge-facing evidence is [`docs/release/FINAL_HACKATHON_EVIDENCE.md`](docs/release/FINAL_HACKATHON_EVIDENCE.md). Results from different datasets/protocols are intentionally **not blended into one synthetic accuracy number**.
 
 | Evidence lane | Verified result | What it supports |
 |---|---:|---|
@@ -185,7 +185,7 @@ The launcher opens the browser automatically. If needed:
 
 | Service | Address |
 |---|---|
-| **Main SIH console** | `http://127.0.0.1:8090/console.html` |
+| **Main Hack for Social Cause console** | `http://127.0.0.1:8090/console.html` |
 | **Garuda engine** | `http://127.0.0.1:8090` |
 | **Engine health** | `http://127.0.0.1:8090/health` |
 | **Console health** | `http://127.0.0.1:8090/health` |
@@ -222,7 +222,7 @@ Before recording or presenting, verify:
 - CSV / PCAP analysis reaches the local backend and returns forecast cards.
 - Architecture, forecast proof, MITRE rail, explainability, benchmarks and enterprise/CII sections are visible on the same page.
 
-Presentation flow: [`sih_submission/DEMO_SCRIPT.md`](sih_submission/DEMO_SCRIPT.md)
+Presentation flow: [`hackathon_submission/DEMO_SCRIPT.md`](hackathon_submission/DEMO_SCRIPT.md)
 
 ---
 
@@ -231,11 +231,11 @@ Presentation flow: [`sih_submission/DEMO_SCRIPT.md`](sih_submission/DEMO_SCRIPT.
 | Path | Purpose | Priority |
 |---|---|---|
 | `README.md` | Project overview + setup | **START HERE** |
-| `console.html` | Main premium SIH dashboard | **HIGH** |
+| `console.html` | Main premium Hack for Social Cause dashboard | **HIGH** |
 | `garuda_v3/` | Forecasting, inference, training, evaluation, runtime | **HIGH** |
-| `docs/release/FINAL_SIH_EVIDENCE.md` | Current claim/evidence source of truth | **HIGH** |
+| `docs/release/FINAL_HACKATHON_EVIDENCE.md` | Current claim/evidence source of truth | **HIGH** |
 | `RELEASE_EVIDENCE.md` | Short evidence index | High |
-| `sih_submission/` | SIH architecture and demo material | High |
+| `hackathon_submission/` | Hack for Social Cause architecture and demo material | High |
 | `datasets/` | Dataset provenance / manifests / prepared data | Engineering |
 | `garuda_v3/tests/` + `tests/` | Regression and integration validation | Engineering |
 | `security_validation/` | Defensive validation material | Engineering |
@@ -317,7 +317,7 @@ OPENBLAS_NUM_THREADS=1 python -m unittest discover -s garuda_v3/tests -v
 Additional checks:
 
 ```bash
-python ntro-world-model/tests/test_data_integrity.py
+python garuda-world-model/tests/test_data_integrity.py
 python tests/test_proxy_exposure.py
 ```
 
@@ -332,11 +332,11 @@ Reference training path:
 
 ```bash
 python -m garuda_v3.data \
-  ntro-world-model/cicids2018_data/Thursday-01-03-2018_Infiltration.csv \
+  garuda-world-model/cicids2018_data/Thursday-01-03-2018_Infiltration.csv \
   --output garuda_v3/artifacts/Thursday.npz
 
 python -m garuda_v3.data \
-  ntro-world-model/cicids2018_data/Friday-02-03-2018_Infiltration_REAL.csv \
+  garuda-world-model/cicids2018_data/Friday-02-03-2018_Infiltration_REAL.csv \
   --output garuda_v3/artifacts/Friday.npz
 
 OPENBLAS_NUM_THREADS=1 python -m garuda_v3.train \
@@ -355,7 +355,7 @@ Use a **new output directory**; do not overwrite published evidence artifacts.
 
 ## Current scope
 
-Krishna Defence is a **research / SIH prototype**, not a certified production IPS.
+Krishna Defence is a **research / Hack for Social Cause prototype**, not a certified production IPS.
 
 The strongest demonstrated combination today is:
 
@@ -373,7 +373,7 @@ This repository is intended for **defensive cybersecurity research, owned-lab te
 
 <div align="center">
 
-### SIH26153 · Krishna Defence System
+### HackForSocialCause · Krishna Defence System
 **Forecast the network state. Explain the trajectory. Respond with evidence.**
 
 </div>

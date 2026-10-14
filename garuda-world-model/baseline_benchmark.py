@@ -1,5 +1,5 @@
 """
-NTRO SIH26153: Genuine Empirical Benchmark Suite (Zero-Leakage 3-Way Split)
+Garuda HackForSocialCause: Genuine Empirical Benchmark Suite (Zero-Leakage 3-Way Split)
 Compares PyTorch CyberLSTMWorldModel vs Logistic Regression Baseline
 on 100% genuine CSE-CIC-IDS2018 datasets.
 - PyTorch LSTM Garuda AI (trained checkpoint cyber_world_model_pytorch.pt)

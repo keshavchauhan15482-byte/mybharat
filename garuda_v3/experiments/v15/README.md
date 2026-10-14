@@ -19,7 +19,7 @@ The three-seed LSTM mean observed FPR is 0.0000 on this finite test population, 
 ## Critical limits
 
 - The untouched test has zero clean-history future-positive examples in all three seeds. Verified pre-attack/pre-compromise warning lead time is therefore **not established**.
-- The pilot's numeric feature selector can include system/process telemetry from X-IIoTID. A strict network-only feature audit/ablation is still required before using this as pure network-traffic-only SIH evidence.
+- The pilot's numeric feature selector can include system/process telemetry from X-IIoTID. A strict network-only feature audit/ablation is still required before using this as pure network-traffic-only Hack for Social Cause evidence.
 - V15 uses 60-second host-minute telemetry. The current live Garuda v3 service uses a 10-second graph/checkpoint schema. These are not drop-in compatible.
 - Therefore the V15 result is integrated into Krishna Defence as the latest measured Garuda evidence and a fail-closed response-policy gate. It does not replace the live runtime checkpoint yet.
 

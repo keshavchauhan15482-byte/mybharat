@@ -1,4 +1,4 @@
-# Krishna Defence / Garuda AI — Max 5-slide SIH content
+# Krishna Defence / Garuda AI — Max 5-slide Hack for Social Cause content
 
 > Use only verified numbers from the cited V46/V15 result files. Do not convert the 40-second forecast horizon into “40 seconds before compromise.”
 

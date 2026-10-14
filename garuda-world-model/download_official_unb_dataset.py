@@ -1,5 +1,5 @@
 """
-NTRO SIH26153: Official Canadian Institute for Cybersecurity (UNB) Dataset Downloader
+Garuda HackForSocialCause: Official Canadian Institute for Cybersecurity (UNB) Dataset Downloader
 Directly streams and downloads the authentic published CSE-CIC-IDS2018 dataset from the
 official UNB AWS S3 Open Data Repository:
 https://cse-cic-ids2018.s3.amazonaws.com/Processed%20Traffic%20Data%20for%20ML%20Algorithms/Friday-02-03-2018_TrafficForML_CICFlowMeter.csv

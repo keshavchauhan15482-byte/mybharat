@@ -1,5 +1,5 @@
 """
-NTRO SIH26153: Gated LSTM Cyber Garuda AI Trainer
+Garuda HackForSocialCause: Gated LSTM Cyber Garuda AI Trainer
 Trains transition dynamics P(S_{t+1} | S_t) and risk projection on genuine 
 balanced CSE-CIC-IDS2018 datasets with class-weighted loss and 3-way split support.
 """
@@ -87,7 +87,7 @@ class LSTMWorldModelTrainer:
 
     def train(self, dataset, epochs=30, attack_weight=1.0, benign_weight=1.0):
         print("=" * 85)
-        print(f"🧠 TRAINING NTRO GATED LSTM SEQUENCE WORLD MODEL (Input: {self.input_dim}, Hidden: {self.hidden_dim})")
+        print(f"🧠 TRAINING GARUDA GATED LSTM SEQUENCE WORLD MODEL (Input: {self.input_dim}, Hidden: {self.hidden_dim})")
         print(f"   Dataset Sequences: {len(dataset)} | Attack Weight: {attack_weight:.2f}, Benign Weight: {benign_weight:.2f}")
         print("=" * 85)
 

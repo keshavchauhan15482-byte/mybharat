@@ -65,7 +65,7 @@ jobs:
             --retry 8 --retry-all-errors --retry-delay 10 \
             --connect-timeout 30 --max-time 1800 \
             -H 'Accept: application/octet-stream' \
-            -A 'Garuda-SIH-V99-Frozen-One-Shot/1.0' \
+            -A 'Garuda-Hackathon-V99-Frozen-One-Shot/1.0' \
             -o "$FILE" "$URL"
           echo '900deec66e058801a377fd81c5fc805e  '"$FILE" | md5sum -c -
           sha256sum "$FILE"

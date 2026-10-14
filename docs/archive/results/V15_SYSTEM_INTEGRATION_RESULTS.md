@@ -13,7 +13,7 @@ V15 is the Garuda AI research/evidence branch. Krishna Defence remains the full 
 Before changing the system, GitHub Actions run `34989115072` established a clean baseline:
 
 - 69 Garuda Python tests passed.
-- 7 NTRO data-integrity checks passed.
+- 7 Garuda data-integrity checks passed.
 - 5 proxy-exposure checks passed.
 - 15 V11 strict Node control checks passed.
 - 12 actual loopback HTTP enforcement checks passed.
@@ -22,7 +22,7 @@ Before changing the system, GitHub Actions run `34989115072` established a clean
 The code-complete integration run `34990723033` then passed:
 
 - **91 Garuda Python tests**, including 5 restored V13 policy tests, 7 restored V14 verified-campaign/data-gate tests, and 10 V15 system-integration tests.
-- **7 NTRO data-integrity tests**.
+- **7 Garuda data-integrity tests**.
 - **5 proxy-exposure checks**.
 - **15 V11 strict Node control checks**.
 - **12 actual loopback HTTP enforcement checks** with upstream receipt verification.

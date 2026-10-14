@@ -1,5 +1,5 @@
 """
-NTRO SIH26153: PyTest Automated Verification Suite
+Garuda HackForSocialCause: PyTest Automated Verification Suite
 Tests PyTorch Cyber World Model tensors, output dimensions, gradient flow,
 FastAPI endpoints, SHAP explainability, and Scapy PCAP extraction.
 """

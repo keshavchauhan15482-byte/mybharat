@@ -1,6 +1,6 @@
 # V52 — CICAPT timeline / lead-time evidence
 
-V48 establishes controlled unseen-family generalisation on frozen reserve families. V52 targets the next missing SIH evidence: whether a frozen Garuda warning occurs **before an independently recorded attack step**.
+V48 establishes controlled unseen-family generalisation on frozen reserve families. V52 targets the next missing Hack for Social Cause evidence: whether a frozen Garuda warning occurs **before an independently recorded attack step**.
 
 ## Why CICAPT-IIoT2024
 

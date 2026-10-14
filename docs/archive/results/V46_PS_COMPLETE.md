@@ -1,6 +1,6 @@
 # V46 PS-complete forecasting path
 
-V46 is an **additive** SIH problem-statement coverage path. It does not replace, rewrite, or inflate historical Garuda v3/V15/V45 evidence.
+V46 is an **additive** Hack for Social Cause Problem-statement coverage path. It does not replace, rewrite, or inflate historical Garuda v3/V15/V45 evidence.
 
 ## Why V46 exists
 
@@ -111,9 +111,9 @@ Unlabelled PCAP telemetry can still train the world-model state transition using
 
 The pull-request workflow `.github/workflows/v46-ps-diagnostic.yml` prepares the four committed IDS2018 PCAP captures at 10-second resolution and runs seeds **42, 43 and 44**. It reports every seed and a mean/sample-SD summary; it does not choose the best seed.
 
-This workflow is deliberately a **development diagnostic**, not the final SIH benchmark, because those campaigns have already been inspected and their timing labels are weak.
+This workflow is deliberately a **development diagnostic**, not the final benchmark, because those campaigns have already been inspected and their timing labels are weak.
 
-## What is still required for release-grade SIH evidence
+## What is still required for release-grade Hack for Social Cause evidence
 
 V46 does not manufacture missing evidence. A final release claim still requires:
 

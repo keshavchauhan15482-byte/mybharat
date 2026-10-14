@@ -1,5 +1,5 @@
 """
-NTRO SIH26153: PyTorch Deep Learning Cyber Garuda AIs
+Garuda HackForSocialCause: PyTorch Deep Learning Cyber Garuda AIs
 Implements:
 1. CyberLSTMWorldModel: 2-Layer Gated LSTM with dropout, autoregressive rollout, and risk head.
 2. TransformerCyberWorldModel: Multi-Head Self-Attention Temporal Transformer with native attention explainability.

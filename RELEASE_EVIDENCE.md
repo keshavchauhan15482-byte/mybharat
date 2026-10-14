@@ -1,6 +1,6 @@
 # Krishna Defence / Garuda AI — Release Evidence
 
-**Authoritative judge-facing evidence:** [`docs/release/FINAL_SIH_EVIDENCE.md`](docs/release/FINAL_SIH_EVIDENCE.md)
+**Authoritative judge-facing evidence:** [`docs/release/FINAL_HACKATHON_EVIDENCE.md`](docs/release/FINAL_HACKATHON_EVIDENCE.md)
 
 This root index intentionally stays short so older exploratory metrics cannot be mistaken for current release evidence. Different experiments and datasets are not blended into one synthetic accuracy score.
 

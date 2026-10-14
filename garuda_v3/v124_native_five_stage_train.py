@@ -1,6 +1,6 @@
 """V124 exact-native five-stage MITRE tactic classifier certification.
 
-Uses only publisher-labelled UWF Zeek network records with the exact five SIH tactics.
+Uses only publisher-labelled UWF Zeek network records with the exact five tactics.
 No proxy mapping is permitted. Sources are fixed before metrics; each class is sorted by
 timestamp and split 60/20/20 chronologically. Candidate head selection is validation-only;
 final test is scored once after the winner is frozen in memory.

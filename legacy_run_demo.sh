@@ -1,7 +1,7 @@
 #!/bin/bash
 # ─────────────────────────────────────────────────────────────────────────────
 # Krishna Defence System — One-Command Demo Launcher
-# SIH26153 (NTRO) | Team: The Predators
+# HackForSocialCause (Garuda) | Team: The Predators
 #
 # Usage:  ./run_demo.sh
 # Stops:  ./run_demo.sh stop
@@ -43,7 +43,7 @@ fi
 echo ""
 echo -e "${BOLD}${CYAN}╔══════════════════════════════════════════════════════════╗${NC}"
 echo -e "${BOLD}${CYAN}║    🛡️  KRISHNA DEFENCE SYSTEM — DEMO LAUNCHER             ║${NC}"
-echo -e "${BOLD}${CYAN}║    SIH26153 (NTRO) | Team: The Predators                 ║${NC}"
+echo -e "${BOLD}${CYAN}║    HackForSocialCause (Garuda) | Team: The Predators                 ║${NC}"
 echo -e "${BOLD}${CYAN}╚══════════════════════════════════════════════════════════╝${NC}"
 echo ""
 
@@ -104,7 +104,7 @@ fi
 log_info "Starting Garuda AI FastAPI (port 8001)..."
 FASTAPI_AVAILABLE=false
 if "$PYTHON" -c "import fastapi, uvicorn" 2>/dev/null; then
-  cd "$PROJECT_DIR/ntro-world-model"
+  cd "$PROJECT_DIR/garuda-world-model"
   PYTHONPYCACHEPREFIX=/tmp/pycache "$PYTHON" -m uvicorn fastapi_server:app \
     --host 0.0.0.0 --port 8001 --log-level warning > /tmp/kds_fastapi.log 2>&1 &
   FASTAPI_PID=$!
@@ -124,7 +124,7 @@ fi
 log_info "Starting Garuda AI Streamlit Dashboard (port 8501)..."
 STREAMLIT_AVAILABLE=false
 if "$PYTHON" -c "import streamlit" 2>/dev/null; then
-  cd "$PROJECT_DIR/ntro-world-model"
+  cd "$PROJECT_DIR/garuda-world-model"
   PYTHONPYCACHEPREFIX=/tmp/pycache "$PYTHON" -m streamlit run streamlit_app.py \
     --server.port 8501 \
     --server.headless true \

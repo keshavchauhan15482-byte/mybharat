@@ -37,8 +37,8 @@ jobs:
         run: python -m compileall -q garuda_v3
       - name: Python Garuda regression
         run: python -m unittest discover -s garuda_v3/tests -v
-      - name: NTRO data integrity regression
-        run: python ntro-world-model/tests/test_data_integrity.py
+      - name: Garuda data integrity regression
+        run: python garuda-world-model/tests/test_data_integrity.py
       - name: Proxy exposure regression
         run: python tests/test_proxy_exposure.py
       - name: Premium command centre UI contract

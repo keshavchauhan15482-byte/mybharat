@@ -1,6 +1,6 @@
 {
   "protocol_version": "V88.0",
-  "purpose": "Independent-source real network-traffic attack replication for the final SIH evidence pack",
+  "purpose": "Independent-source real network-traffic attack replication for the final Hack for Social Cause evidence pack",
   "dataset": "UNSW-NB15 raw four-shard flow corpus",
   "dataset_source": "mrwellsdavid/unsw-nb15 via KaggleHub; underlying UNSW-NB15 cyber-range traffic",
   "evaluation_script": "garuda_v3/v67_same_input_baseline.py",

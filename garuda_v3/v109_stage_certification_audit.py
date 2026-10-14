@@ -1,4 +1,4 @@
-"""V109 fail-closed audit for the SIH five-stage certification gate.
+"""V109 fail-closed audit for the five-stage certification gate.
 
 This does not train or score a new stage model. It converts the evidence boundary into
 machine-verifiable form so packet-feature completeness cannot be confused with a
@@ -28,7 +28,7 @@ def audit(manifest: dict) -> dict:
     if manifest.get("schema_version") != "v97.3":
         raise StageCertificationError("V109 requires the V97.3 post-V108 manifest")
     if manifest.get("required_stages") != REQUIRED_STAGES:
-        raise StageCertificationError("Required SIH five-stage contract drift")
+        raise StageCertificationError("Required five-stage contract drift")
 
     packet = manifest.get("packet_evidence", {})
     supported = packet.get("supported_features", {})

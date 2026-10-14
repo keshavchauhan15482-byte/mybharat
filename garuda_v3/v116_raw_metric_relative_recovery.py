@@ -3,7 +3,7 @@
 V115 showed that history-relative coordinates improve support coverage and raw
 reconstructed forecasting, but its unweighted normalized objective can overweight
 small-scale coordinates. V116 keeps the same history-only relative representation
-and 34-feature SIH packet/flow contract, while weighting normalized-coordinate
+and 34-feature packet/flow contract, while weighting normalized-coordinate
 squared error by the square of the frozen train-only transform scale. Up to one
 constant factor this is the raw reconstructed-state MSE used by external gates.
 

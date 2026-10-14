@@ -1,9 +1,9 @@
-> **2026-09-11 audit update:** This is a research/demo prototype, not a market-ready security product. Legacy accuracy, zero-day, lead-time and production claims below are unverified and superseded by `AUDIT.md`. The CSV timestamp bug is repaired; existing weights require retraining and revalidation. Read `AUDIT.md` before running or presenting this project. New experimental future-target training: `ntro-world-model/train_forecast_v2.py`. Proxy and Python API now bind to loopback by default.
+> **2026-09-11 audit update:** This is a research/demo prototype, not a market-ready security product. Legacy accuracy, zero-day, lead-time and production claims below are unverified and superseded by `AUDIT.md`. The CSV timestamp bug is repaired; existing weights require retraining and revalidation. Read `AUDIT.md` before running or presenting this project. New experimental future-target training: `garuda-world-model/train_forecast_v2.py`. Proxy and Python API now bind to loopback by default.
 
 # Krishna Defence System 🇮🇳🏹🦚☸️🦅
 
 ### AI-Powered Network Attack Forecasting & Real-Time Threat Neutralization
-**Smart India Hackathon 2026 — Problem Statement SIH26153 (NTRO)**
+**Hack for Social Cause 2026 — Problem Statement HackForSocialCause (Garuda)**
 **Team: The Predators**
 
 > *Design and develop a software prototype that learns the evolving state of a computer network from traffic telemetry and predicts the likelihood and progression of malicious activity before compromise is completed.*
@@ -85,12 +85,12 @@ CSE-CIC-IDS2018 Dataset (200,000+ Rows, 80 Columns)
 ### Key Files:
 | File | Purpose |
 |------|---------|
-| `ntro-world-model/pytorch_models.py` | LSTM + Transformer architecture |
-| `ntro-world-model/train_world_model.py` | Training pipeline (BPTT) |
-| `ntro-world-model/baseline_benchmark.py` | LSTM vs Logistic Regression comparison |
-| `ntro-world-model/kfold_cross_validation.py` | 5-Fold Stratified Cross-Validation |
-| `ntro-world-model/dataset_pipeline.py` | CIC-IDS2018 → State Vectors |
-| `ntro-world-model/streamlit_app.py` | Interactive Dashboard |
+| `garuda-world-model/pytorch_models.py` | LSTM + Transformer architecture |
+| `garuda-world-model/train_world_model.py` | Training pipeline (BPTT) |
+| `garuda-world-model/baseline_benchmark.py` | LSTM vs Logistic Regression comparison |
+| `garuda-world-model/kfold_cross_validation.py` | 5-Fold Stratified Cross-Validation |
+| `garuda-world-model/dataset_pipeline.py` | CIC-IDS2018 → State Vectors |
+| `garuda-world-model/streamlit_app.py` | Interactive Dashboard |
 
 ---
 
@@ -203,16 +203,16 @@ node proxy.js
 ### Run Garuda AI Prediction:
 ```bash
 # Train Garuda AI on CIC-IDS2018 data
-python3 ntro-world-model/train_world_model.py
+python3 garuda-world-model/train_world_model.py
 
 # Run 5-Fold Cross-Validation Benchmark
-python3 ntro-world-model/kfold_cross_validation.py
+python3 garuda-world-model/kfold_cross_validation.py
 
 # Run LSTM vs Baseline Comparison
-python3 ntro-world-model/baseline_benchmark.py
+python3 garuda-world-model/baseline_benchmark.py
 
 # Interactive Streamlit Dashboard
-streamlit run ntro-world-model/streamlit_app.py
+streamlit run garuda-world-model/streamlit_app.py
 ```
 
 ### Run Security Audit:
@@ -251,6 +251,6 @@ node claude-independent-audit.js
 
 ---
 
-**Built for Smart India Hackathon 2026 — 100% Sovereign Bharat Architecture 🇮🇳**
-**Problem Statement: SIH26153 (NTRO) — AI-Based Network Attack Forecasting**
+**Built for Hack for Social Cause 2026 — 100% Sovereign Bharat Architecture 🇮🇳**
+**Problem Statement: HackForSocialCause (Garuda) — AI-Based Network Attack Forecasting**
 **Team: The Predators**

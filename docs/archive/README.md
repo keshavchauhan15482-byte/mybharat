@@ -11,6 +11,6 @@ The pre-cleanup repository-wide SHA-256 path manifest is preserved under [`prove
 Important interpretation rules:
 
 - archived host/service-graph failures do not invalidate the separately frozen V48 X-IIoTID reserve-family benchmark;
-- archived scores must not be presented as current production or SIH release metrics;
+- archived scores must not be presented as current production or Hack for Social Cause release metrics;
 - a failed or superseded experiment remains part of the research record;
 - no archived result should be relabelled as a fresh holdout after inspection.

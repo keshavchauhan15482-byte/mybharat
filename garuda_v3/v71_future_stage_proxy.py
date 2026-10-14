@@ -1,6 +1,6 @@
 """V71 forecast-state attack-stage proxy benchmark on X-IIoTID.
 
-The SIH requirement asks the future network state to be mapped to attack stages. This
+The Hack for Social Cause requirement asks the future network state to be mapped to attack stages. This
 benchmark trains the Garuda residual world model on chronological development data,
 trains a stage mapper on *ground-truth future network states* from training only, then
 feeds the mapper Garuda's forecast states in the held-out chronological test period.

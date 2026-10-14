@@ -1,4 +1,4 @@
-name: V93 Final SIH Release Audit
+name: V93 Final Hack for Social Cause release Audit
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ on:
       - 'garuda_v3/v93_final_release_audit.py'
       - '.github/workflows/v93-final-release-audit.yml'
       - 'RELEASE_EVIDENCE.md'
-      - 'docs/release/FINAL_SIH_EVIDENCE.md'
+      - 'docs/release/FINAL_HACKATHON_EVIDENCE.md'
       - 'docs/release/v88_final_independent_source/RESULTS.md'
       - 'docs/release/v90_runtime_performance/RESULTS.md'
       - 'docs/release/v92_toniot_first_test/RESULTS.md'
@@ -64,7 +64,7 @@ jobs:
       - name: Upload final release audit
         uses: actions/upload-artifact@v4
         with:
-          name: v93-final-sih-release-audit
+          name: v93-final-hackathon-release-audit
           path: garuda_v3/artifacts/v93_release_audit/summary.json
           retention-days: 30
           if-no-files-found: error

@@ -1,4 +1,4 @@
-# Krishna Defence / Garuda AI — SIH26153 Architecture (2-page source)
+# Krishna Defence / Garuda AI — HackForSocialCause Architecture (2-page source)
 
 ## Page 1 — World-model forecasting architecture
 
@@ -10,7 +10,7 @@ Garuda AI models a computer network as an evolving graph and forecasts future ne
 
 **Input** → raw PCAP or source-labelled flow telemetry → integrity validation → 10-second time buckets → directed network graph → bounded feature tensor.
 
-The additive V46 state vector has **34 flow + packet telemetry dimensions** covering the SIH statement:
+The additive V46 state vector has **34 flow + packet telemetry dimensions** covering the problem statement:
 
 - flow/byte/packet counts and duration;
 - SYN, ACK, RST, FIN, PSH and URG fractions;
@@ -79,7 +79,7 @@ Reported evidence includes state MSE versus persistence; 10/20/30/40-second risk
 
 ### Current V46 diagnostic boundary
 
-The first 34-feature V46 PCAP diagnostic uses reused CIC-IDS2018 campaigns and weak schedule-assisted labels, so it is **not final SIH evidence**. All three seeds beat persistence on the web validation campaign, but cross-family botnet/infiltration test state MSE is worse than persistence. No model passes the FPR <=1% / recall >=80% attack gate. There are no clean-history future-positive test examples and no verified compromise timestamps, so pre-compromise lead time is not claimed. Supervised MITRE metrics are also not claimed.
+The first 34-feature V46 PCAP diagnostic uses reused CIC-IDS2018 campaigns and weak schedule-assisted labels, so it is **not final Hack for Social Cause evidence**. All three seeds beat persistence on the web validation campaign, but cross-family botnet/infiltration test state MSE is worse than persistence. No model passes the FPR <=1% / recall >=80% attack gate. There are no clean-history future-positive test examples and no verified compromise timestamps, so pre-compromise lead time is not claimed. Supervised MITRE metrics are also not claimed.
 
 This negative evidence is intentional: the pipeline fails closed rather than turning an exposed holdout into a success claim.
 

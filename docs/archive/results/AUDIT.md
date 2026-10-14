@@ -4,11 +4,11 @@
 
 ## Verdict
 
-Substantial student prototype with a working HTTP inspection architecture, adaptive signature memory, dashboards, a handwritten LSTM runtime, PyTorch model definitions and data utilities. It is not yet an independently validated network attack forecasting product. A good SIH direction, but the largest gains now come from correct telemetry and reproducible future prediction rather than adding more model names.
+Substantial student prototype with a working HTTP inspection architecture, adaptive signature memory, dashboards, a handwritten LSTM runtime, PyTorch model definitions and data utilities. It is not yet an independently validated network attack forecasting product. A good direction, but the largest gains now come from correct telemetry and reproducible future prediction rather than adding more model names.
 
 Qualitative reviewer assessment, not measured performance: prototype breadth 7/10; demonstrated forecasting validity 3/10; commercial readiness 2/10. These scores describe the submitted evidence, not the team's potential. The fixes in this revision improve specific correctness/security paths; they do not establish new accuracy or production readiness.
 
-Official PS verified at https://www.sih.gov.in/sih2026PS (SIH26153). It allows feature vectors or graphs and alternative sequence/graph architectures. GNN is not compulsory. The priorities are learned future state dynamics, interpretable progression predictions, both flow and packet features, offline operation and comparison with logistic regression. Original documents/presentation have legacy claims; this audit supersedes them.
+Official Problem Statement verified for Hack for Social Cause hackathon. It allows feature vectors or graphs and alternative sequence/graph architectures. GNN is not compulsory. The priorities are learned future state dynamics, interpretable progression predictions, both flow and packet features, offline operation and comparison with logistic regression. Original documents/presentation have legacy claims; this audit supersedes them.
 
 ## Findings, evidence and status
 
@@ -39,7 +39,7 @@ The two distinct CSV captures under `cicids2018_data` were streamed and counted:
 | Friday-02-03-2018_Infiltration_REAL.csv | 199,999 | 162,906 Bot; 37,093 Benign | 3,136 |
 | Thursday-01-03-2018_Infiltration.csv | 49,999 | 49,995 Benign; 4 repeated Label headers | 3,309 |
 
-Neither file contains an Infiltration-labelled row. The filename is not reliable label evidence. Both headers lack source/destination IP pairs, TTL, actual fragmentation and retransmission fields. No raw PCAP is included in the archive. Root/subdirectory sample copies are not additional independent datasets. Full counts and SHA-256 hashes are in `ntro-world-model/dataset_audit.json`; hashes identify local bytes, not proof of official provenance.
+Neither file contains an Infiltration-labelled row. The filename is not reliable label evidence. Both headers lack source/destination IP pairs, TTL, actual fragmentation and retransmission fields. No raw PCAP is included in the archive. Root/subdirectory sample copies are not additional independent datasets. Full counts and SHA-256 hashes are in `garuda-world-model/dataset_audit.json`; hashes identify local bytes, not proof of official provenance.
 
 Corrected future-only example construction yields 3,537 train / 1,220 validation / 1,243 test examples, with 535 / 472 / 978 positives. This is a strong time-dependent class shift. Examples within each split overlap and are correlated; do not treat them as independent observations for confidence intervals. Thresholding a window as malicious only when 35% of flows are malicious also hides small attacks; future work should define asset-level incident labels explicitly.
 
@@ -61,7 +61,7 @@ Implementation reference: https://pytorch-geometric.readthedocs.io/en/latest/gen
 
 `forecast_dataset.py` builds 16 observed windows and 8 strictly future target windows, rejects capture boundaries/time gaps, and splits raw chronology before making sequences. `train_forecast_v2.py` trains the real PyTorch LSTM with autograd, compares an LR on flattened identical history, tunes both thresholds on validation, evaluates only on test, and compares future-state MSE against persistence. Risk means any attack-labelled window in the future horizon, not probability of compromise.
 
-From the `ntro-world-model` directory, after installing requirements:
+From the `garuda-world-model` directory, after installing requirements:
 
 ```bash
 python train_forecast_v2.py --csv cicids2018_data/Thursday-01-03-2018_Infiltration.csv cicids2018_data/Friday-02-03-2018_Infiltration_REAL.csv --output forecast-v2
@@ -95,7 +95,7 @@ The official CIC description includes packet captures and system logs in additio
 Tests from project root:
 
 ```bash
-python ntro-world-model/tests/test_data_integrity.py
+python garuda-world-model/tests/test_data_integrity.py
 python tests/test_proxy_exposure.py
 ```
 

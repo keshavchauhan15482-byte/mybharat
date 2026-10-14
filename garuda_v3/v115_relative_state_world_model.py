@@ -1,7 +1,7 @@
 """V115 development-only history-relative PS-complete world-model recovery.
 
 External failures V99/V106/V113/V114 are quarantined and never supplied here. The raw
-SIH 34-feature packet/flow graph contract is retained at ingestion, but the transition
+34-feature packet/flow graph contract is retained at ingestion, but the transition
 model is trained in history-relative state coordinates: every non-availability feature
 is centered by that sequence's history-only pooled median and divided by a robust scale
 fit on Phase-1 training histories only. Availability/sensor-presence indicators remain

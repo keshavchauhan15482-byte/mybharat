@@ -1,4 +1,4 @@
-"""Final SIH release-integrity audit through V94.
+"""Final Hack for Social Cause release-integrity audit through V94.
 
 This is not a new accuracy benchmark. It verifies that the active runtime bundle is
 fail-closed and usable, that judge-facing evidence points to the current authoritative
@@ -39,7 +39,7 @@ def load_claim_matrix(path: Path) -> dict[str, dict]:
     with path.open(newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     if not rows or "claim_id" not in rows[0]:
-        raise RuntimeError("SIH claim matrix is empty or malformed")
+        raise RuntimeError("Hack for Social Cause claim matrix is empty or malformed")
     by_id = {r["claim_id"]: r for r in rows}
     required = {
         "state_v70", "attack_v88", "progression_v89_1", "leadtime_v93",
@@ -48,7 +48,7 @@ def load_claim_matrix(path: Path) -> dict[str, dict]:
     }
     missing = required - set(by_id)
     if missing:
-        raise RuntimeError(f"SIH claim matrix missing rows: {sorted(missing)}")
+        raise RuntimeError(f"Hack for Social Cause claim matrix missing rows: {sorted(missing)}")
     expected = {
         "progression_v89_1": "NOT_APPROVED",
         "leadtime_v93": "APPROVED_DIAGNOSTIC",
@@ -98,8 +98,8 @@ def main():
         raise RuntimeError("Audit expectation changed: update V94 support-gate evidence before enabling a pinned gate")
 
     release = ROOT / "RELEASE_EVIDENCE.md"
-    final = ROOT / "docs/release/FINAL_SIH_EVIDENCE.md"
-    claims = ROOT / "docs/release/SIH_CLAIM_MATRIX.csv"
+    final = ROOT / "docs/release/FINAL_HACKATHON_EVIDENCE.md"
+    claims = ROOT / "docs/release/HACKATHON_CLAIM_MATRIX.csv"
     v88 = ROOT / "docs/release/v88_final_independent_source/RESULTS.md"
     v90 = ROOT / "docs/release/v90_runtime_performance/RESULTS.md"
     v92doc = ROOT / "docs/release/v92_toniot_first_test/RESULTS.md"
@@ -133,7 +133,7 @@ def main():
         raise RuntimeError("V92 immutable confusion counts drift")
 
     report = {
-        "protocol": "Final SIH release-integrity audit through V94",
+        "protocol": "Final Hack for Social Cause release-integrity audit through V94",
         "accuracy_benchmark": False,
         "active_bundle": {
             "bundle_id": manifest["bundle_id"],
