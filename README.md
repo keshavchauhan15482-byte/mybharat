@@ -7,7 +7,7 @@
 **Theme:** *AI, GIS & Emerging Technologies (Predictive Models & Decision Support Systems for Critical Infrastructure & Societal Protection)*
 
 ![Theme](https://img.shields.io/badge/Theme-AI%2C%20GIS%20%26%20Emerging%20Tech-blue?style=for-the-badge)
-![HackForSocialCause](https://img.shields.io/badge/Hack-For-Social-Cause-F97316?style=for-the-badge)
+![HackForSocialCause](https://img.shields.io/badge/Hack--For--Social--Cause-2026-F97316?style=for-the-badge)
 ![Offline First](https://img.shields.io/badge/Demo-Offline--First-1F883D?style=for-the-badge)
 ![World Model](https://img.shields.io/badge/Core-Network%20World%20Model-2563EB?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
