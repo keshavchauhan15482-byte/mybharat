@@ -150,8 +150,8 @@ Pinned Python dependencies are in [`garuda_v3/requirements.txt`](garuda_v3/requi
 ### 1) Clone
 
 ```bash
-git clone https://github.com/keshavchauhan15482-byte/defencekrishna.git
-cd defencekrishna
+git clone https://github.com/keshavchauhan15482-byte/mybharat.git
+cd mybharat
 ```
 
 ### 2) Start
