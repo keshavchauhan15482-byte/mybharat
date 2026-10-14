@@ -1,0 +1,38 @@
+name: Package Current Krishna Defence Release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/package-latest-zip.yml'
+      - 'RELEASE_EVIDENCE.md'
+      - 'docs/release/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build clean ZIP from exact main
+        run: |
+          set -euo pipefail
+          git fetch origin main --force
+          git archive --format=zip --prefix=KrishnaDefence_SIH26153_Release/ -o KrishnaDefence_SIH26153_Release.zip origin/main
+          sha256sum KrishnaDefence_SIH26153_Release.zip > KrishnaDefence_SIH26153_Release.zip.sha256
+          unzip -t KrishnaDefence_SIH26153_Release.zip
+      - name: Upload release package
+        uses: actions/upload-artifact@v4
+        with:
+          name: KrishnaDefence_SIH26153_Release
+          path: |
+            KrishnaDefence_SIH26153_Release.zip
+            KrishnaDefence_SIH26153_Release.zip.sha256
+          if-no-files-found: error
+          compression-level: 0

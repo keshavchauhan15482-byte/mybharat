@@ -1,0 +1,51 @@
+name: Krishna Defence Full Integration CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  full-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install Python dependencies
+        run: python -m pip install -r garuda_v3/requirements.txt
+      - name: Install Node dependencies
+        run: npm install --ignore-scripts
+      - name: Compile Garuda Python modules
+        run: python -m compileall -q garuda_v3
+      - name: Python Garuda regression
+        run: python -m pytest garuda_v3/tests -q
+      - name: Bundled PCAP preparation and real state inference
+        run: PYTHONPATH=. python tests/test_bundled_pcap_smoke.py
+      - name: NTRO data integrity regression
+        run: python ntro-world-model/tests/test_data_integrity.py
+      - name: Proxy exposure regression
+        run: python tests/test_proxy_exposure.py
+      - name: Premium command centre UI contract
+        run: python tests/test_premium_ui.py -v
+      - name: V11 enforcement regression
+        run: npm run test:v11
+      - name: Krishna V15 integration contract
+        if: ${{ hashFiles('garuda_v3/tests/test_v15_system_integration.py') != '' }}
+        run: python -m unittest garuda_v3.tests.test_v15_system_integration -v
+      - name: Localhost launcher smoke test
+        run: python start_local.py --smoke --current-python --skip-install --no-browser

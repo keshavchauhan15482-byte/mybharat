@@ -1,0 +1,13 @@
+name: V123 ZeroSWARM frozen one-shot
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  frozen-result-recorded:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'V123 external one-shot is already consumed and immutably recorded; rerun disabled.'
