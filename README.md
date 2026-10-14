@@ -1,17 +1,18 @@
 <div align="center">
 
 # Krishna Defence System
-### Garuda AI · Forecast-First Cyber Defence
+### Garuda AI · Forecast-First Cyber Defence Decision Support System
 
-**Hack for Social Cause 2026 · HackForSocialCause**  
-*AI-based Network Attack Forecasting from Network Traffic Data*
+**Hack for Social Cause 2026**  
+**Theme:** *AI, GIS & Emerging Technologies (Predictive Models & Decision Support Systems for Critical Infrastructure & Societal Protection)*
 
+![Theme](https://img.shields.io/badge/Theme-AI%2C%20GIS%20%26%20Emerging%20Tech-blue?style=for-the-badge)
 ![HackForSocialCause](https://img.shields.io/badge/Hack-For-Social-Cause-F97316?style=for-the-badge)
 ![Offline First](https://img.shields.io/badge/Demo-Offline--First-1F883D?style=for-the-badge)
 ![World Model](https://img.shields.io/badge/Core-Network%20World%20Model-2563EB?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-**See the threat before the impact — with evidence, not guesswork.**
+**See the threat before the impact — AI-powered proactive defence for public services & critical digital infrastructure.**
 
 </div>
 
@@ -34,10 +35,17 @@
 ---
 
 ## What is Krishna Defence?
-
-**Krishna Defence System** is an offline-first Hack for Social Cause research prototype that learns evolving network behaviour, forecasts future network state over multiple horizons, and converts those predicted trajectories into explainable risk evidence for defensive decision support.
-
-Traditional IDS/WAF systems mainly answer **“What is happening now?”**. Garuda AI is built around a harder question:
+ 
+ **Krishna Defence System** is an offline-first Hack for Social Cause research prototype that learns evolving network behaviour, forecasts future network state over multiple horizons, and converts those predicted trajectories into explainable risk evidence for defensive decision support.
+ 
+ ### Societal Impact & Alignment (AI, GIS & Emerging Technologies)
+ Modern society relies heavily on digital public goods, healthcare records, municipal systems, and educational networks. Unlike large financial institutions, public sector organizations and social enterprises cannot afford million-dollar proprietary Security Operations Centers (SOCs). 
+ By providing an **accessible, lightweight, offline-first AI decision support system**:
+ - **Early Threat Forecasting:** Pre-emptively forecasts attack trajectories (+10s to +40s ahead) rather than just alerting post-breach.
+ - **Democratized Protection:** Local CPU-friendly execution ensures high-grade predictive defence for resource-constrained public utilities, schools, and civic systems.
+ - **Explainable AI (XAI):** Built-in interpretable risk readouts and SHAP analysis remove black-box guesswork for municipal network administrators.
+ 
+ Traditional IDS/WAF systems mainly answer **“What is happening now?”**. Garuda AI is built around a harder question:
 
 > **“Given the network state we have observed, what is likely to happen next?”**
 
